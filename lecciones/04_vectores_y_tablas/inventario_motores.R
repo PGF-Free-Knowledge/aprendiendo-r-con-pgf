@@ -13,12 +13,12 @@ cat("Potencia instalada total:", round(sum(equipos$potencia_kw), 1), "kW\n")
 por_area <- tapply(equipos$kwh_mes, equipos$area, sum)
 cat("\nConsumo mensual por área [kWh/mes]:\n")
 for (area in names(por_area)) {
-  cat(sprintf("  %-26s %7.1f\n", area, por_area[[area]]))
+  cat("  ", format(area, width = 26), sprintf("%7.1f", por_area[[area]]), "\n", sep = "")
 }
 
 # 4) Ordenar: los 3 equipos de mayor consumo
 top <- head(equipos[order(equipos$kwh_mes, decreasing = TRUE), ], 3)
 cat("\nTres equipos de mayor consumo:\n")
 for (i in seq_len(nrow(top))) {
-  cat(sprintf("  %-28s %6.1f kWh/mes\n", top$equipo[i], top$kwh_mes[i]))
+  cat("  ", format(top$equipo[i], width = 28), sprintf("%6.1f", top$kwh_mes[i]), " kWh/mes\n", sep = "")
 }

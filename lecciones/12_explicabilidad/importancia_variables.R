@@ -1,5 +1,5 @@
 # Lección 12 - Explicar un modelo: importancia por permutación y dependencia parcial
-library(randomForest)
+suppressPackageStartupMessages(library(randomForest))
 
 df <- read.csv("datos/oil_malal_mensual.csv", fileEncoding = "UTF-8")
 df$mes_num <- as.integer(substr(df$mes, 6, 7))
@@ -21,5 +21,5 @@ png(file.path(salidas, "dependencia_parcial.png"), width = 750, height = 560, re
 partialPlot(modelo, pred.data = df, x.var = "produccion_m3",
             main = "Efecto de la producción en el consumo predicho",
             xlab = "Producción [m³/mes]", ylab = "Consumo predicho [kWh]")
-dev.off()
+invisible(dev.off())   # cierra el archivo de imagen
 cat("\nGráfico guardado en:", file.path(salidas, "dependencia_parcial.png"), "\n")

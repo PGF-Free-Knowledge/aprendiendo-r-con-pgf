@@ -1,5 +1,5 @@
 # Lección 11 - Random Forest: muchos árboles que votan
-library(randomForest)   # install.packages("randomForest") la primera vez
+suppressPackageStartupMessages(library(randomForest))   # install.packages("randomForest") la primera vez
 
 df <- read.csv("datos/oil_malal_mensual.csv", fileEncoding = "UTF-8")
 df$mes_num <- as.integer(substr(df$mes, 6, 7))

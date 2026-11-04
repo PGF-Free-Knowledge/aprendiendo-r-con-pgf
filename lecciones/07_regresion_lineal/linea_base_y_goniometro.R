@@ -30,4 +30,4 @@ abline(lben, col = "#E07A1F", lwd = 2)
 plot(g$velocidad_rpm, g$distancia_parada_pulsos, pch = 19, col = "#1F3864", xlim = c(0, 20),
      main = "Goniómetro: distancia de parada", xlab = "Velocidad [rpm]", ylab = "Pulsos")
 abline(parada, col = "#E07A1F", lwd = 2)
-dev.off()
+invisible(dev.off())   # cierra el archivo de imagen
