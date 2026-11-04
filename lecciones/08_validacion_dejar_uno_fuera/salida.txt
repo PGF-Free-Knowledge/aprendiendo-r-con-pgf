@@ -1,0 +1,4 @@
+Modelo A: E = 9.5210·P + 8058.7
+Error medio (MAE) modelo A:  264.0 kWh
+Error medio (MAE) modelo B:  267.4 kWh
+Predicción para 150 m³: 9486.8 kWh

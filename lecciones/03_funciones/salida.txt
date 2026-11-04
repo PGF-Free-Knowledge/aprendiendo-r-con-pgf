@@ -1,0 +1,5 @@
+Consumo esperado con 150 m³: 9486.8 kWh
+Índice de consumo mayo 2023: 36.62 kWh/m³
+540000 pulsos = 180 ° del brazo
+Con otra escala (444.44 pulsos/°): 45 °
+Consumo esperado con 100, 200 y 300 m³: 9010.8 9962.9 10915 

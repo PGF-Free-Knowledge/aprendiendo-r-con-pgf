@@ -1,0 +1,6 @@
+Planta: Oil Malal 
+Consumo enero 2022: 8674.83 kWh = 8.675 MWh
+Índice de consumo: 119.92 kWh/m³
+15000 pulsos = 5.0 ° del brazo = 0.0938 vueltas del motor
+Clase de consumo_kwh: numeric 
+Clase de pulsos_leidos: integer 

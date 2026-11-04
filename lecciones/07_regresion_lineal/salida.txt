@@ -1,0 +1,26 @@
+Línea base Oil Malal: E = 9.5210·P + 8058.7   R² = 0.8376
+Distancia de parada: d = 131.4·v + 139.9 pulsos   R² = 0.9999
+Predicción a 15 rpm: 2111 pulsos
+
+Resumen completo del modelo de línea base:
+
+Call:
+lm(formula = consumo_kwh ~ produccion_m3, data = df)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-507.48 -205.92  -72.61  175.77  633.71 
+
+Coefficients:
+               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   8058.6945   148.0728   54.42  < 2e-16 ***
+produccion_m3    9.5210     0.9149   10.41  9.6e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 301.4 on 21 degrees of freedom
+Multiple R-squared:  0.8376,	Adjusted R-squared:  0.8298 
+F-statistic: 108.3 on 1 and 21 DF,  p-value: 9.602e-10
+
+null device 
+          1 

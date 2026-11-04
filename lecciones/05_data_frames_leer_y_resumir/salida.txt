@@ -1,0 +1,33 @@
+Primeras filas:
+      mes produccion_m3 consumo_kwh
+1 2022-01         72.34     8674.83
+2 2022-03        104.70     9689.25
+3 2022-04        198.86     9823.56
+4 2022-05        265.41    10503.89
+5 2022-06        188.36     9931.33
+6 2022-07        177.70     9668.73
+
+Tamaño (filas, columnas): 23 3 
+
+Estadística descriptiva:
+ produccion_m3     consumo_kwh   
+ Min.   : 41.01   Min.   : 8468  
+ 1st Qu.: 93.03   1st Qu.: 8903  
+ Median :118.91   Median : 9633  
+ Mean   :146.54   Mean   : 9454  
+ 3rd Qu.:194.46   3rd Qu.: 9810  
+ Max.   :314.16   Max.   :11504  
+
+Promedio por año:
+  anio produccion_m3 consumo_kwh
+1 2022       147.380     9488.64
+2 2023       145.777     9422.12
+
+Meses con producción > 200 m³:
+       mes produccion_m3 consumo_kwh
+4  2022-05        265.41    10503.89
+15 2023-04        214.56     9796.50
+16 2023-05        314.16    11503.69
+18 2023-07        212.12    10051.65
+
+Mes de mayor consumo: 2023-05 (11503.69 kWh)

@@ -1,0 +1,10 @@
+randomForest 4.7-1.2
+Type rfNews() to see new features/changes/bug fixes.
+MAE regresión lineal :  267.4 kWh
+MAE Random Forest    :  295.0 kWh
+
+Importancia de variables (Random Forest):
+  produccion_m3  0.65
+  mes_num        0.35
+
+Predicción para 150 m³ en junio: 9768.6 kWh

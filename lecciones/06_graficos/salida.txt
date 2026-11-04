@@ -1,0 +1,5 @@
+null device 
+          1 
+null device 
+          1 
+Gráficos guardados en: lecciones/06_graficos/salidas 

@@ -1,0 +1,14 @@
+Equipos en el inventario: 20 
+Primer equipo: Bomba de pozo - 0.7 kW
+Potencia instalada total: 84.4 kW
+
+Consumo mensual por área [kWh/mes]:
+  Agua jabonosa y aditivos     385.2
+  Almacenamiento               100.8
+  Emulsión                    291.6
+  Nodriza                      741.6
+
+Tres equipos de mayor consumo:
+  Motor de mezcladora           403.2 kWh/mes
+  Bomba de asfalto in           201.6 kWh/mes
+  Motor rotador emulsión       147.6 kWh/mes

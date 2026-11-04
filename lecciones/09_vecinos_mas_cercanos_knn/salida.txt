@@ -1,0 +1,13 @@
+Meses eficientes: 13 de 23 
+k = 1: exactitud 0.52
+k = 3: exactitud 0.48
+k = 5: exactitud 0.57
+k = 7: exactitud 0.57
+
+Matriz de confusión (k = 3):
+    predicho
+real 0 1
+   0 2 8
+   1 4 9
+
+Mes nuevo con 250 m³ en mayo -> eficiente 

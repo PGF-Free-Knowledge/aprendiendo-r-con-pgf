@@ -1,0 +1,8 @@
+2022-01: real   8674.8 | esperado   8747.4 |   -72.6 kWh -> bajo la línea base
+2022-03: real   9689.2 | esperado   9055.5 |  +633.7 kWh -> SOBRE la línea base
+2022-04: real   9823.6 | esperado   9952.0 |  -128.5 kWh -> bajo la línea base
+2022-05: real  10503.9 | esperado  10585.6 |   -81.8 kWh -> bajo la línea base
+2022-06: real   9931.3 | esperado   9852.1 |   +79.3 kWh -> SOBRE la línea base
+2022-07: real   9668.7 | esperado   9750.6 |   -81.8 kWh -> bajo la línea base
+
+Meses sobre la línea base: 2 de 6

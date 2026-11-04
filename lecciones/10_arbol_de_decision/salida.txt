@@ -1,0 +1,15 @@
+Profundidad 1: exactitud 0.74
+Profundidad 2: exactitud 0.65
+Profundidad 3: exactitud 0.52
+
+Reglas del árbol (profundidad 2):
+n= 23 
+
+node), split, n, loss, yval, (yprob)
+      * denotes terminal node
+
+1) root 23 10 1 (0.4347826 0.5652174)  
+  2) mes_num>=8.5 8  2 0 (0.7500000 0.2500000) *
+  3) mes_num< 8.5 15  4 1 (0.2666667 0.7333333)  
+    6) produccion_m3>=289.785 1  0 0 (1.0000000 0.0000000) *
+    7) produccion_m3< 289.785 14  3 1 (0.2142857 0.7857143) *
