@@ -1,0 +1,41 @@
+# Ejecuta todas las lecciones con R y guarda la salida de cada una en
+# lecciones/<lección>/salida.txt, junto con los gráficos generados.
+name: Ejecutar lecciones
+
+on:
+  push:
+    branches: [main]
+    paths: ["lecciones/**/*.R", "datos/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  ejecutar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: release
+          use-public-rspm: true
+      - name: Instalar paquetes
+        run: Rscript -e 'install.packages("randomForest")'
+      - name: Ejecutar lecciones
+        run: |
+          export LANG=C.UTF-8
+          for script in lecciones/*/*.R; do
+            carpeta=$(dirname "$script")
+            echo "== $script"
+            Rscript "$script" > "$carpeta/salida.txt" 2>&1 || echo "ERROR en $script"
+            cat "$carpeta/salida.txt"
+          done
+          Rscript -e 'cat(R.version.string, "\n"); cat("randomForest", as.character(packageVersion("randomForest")), "| rpart", as.character(packageVersion("rpart")), "| class", as.character(packageVersion("class")), "\n")' > lecciones/version_r.txt
+      - name: Guardar resultados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add lecciones
+          git diff --cached --quiet || git commit -m "Resultados de la ejecución de las lecciones [skip ci]"
+          git push

@@ -1,0 +1,8 @@
+area,tipo,capacidad_btu_h,potencia_kw,eer,horas_semana,horas_anio,kwh_anio
+Lab. de Control,Mini Split,12000,1.26,9.524,60,3120,2351.5
+Lab. de Control,Central,60000,7.5,8.0,60,3120,13996.8
+Lab. de Suelos,Central,60000,7.5,8.0,60,3120,13996.8
+Oficinas 1,Mini Split,12000,1.3,9.231,60,3120,2426.1
+Oficinas 2,Mini Split,12000,1.3,9.231,60,3120,2426.1
+Oficinas 3,Mini Split,12000,1.3,9.231,60,3120,2426.1
+Sala de reuniones,Mini Split,12000,1.3,9.231,60,3120,2426.1
