@@ -22,5 +22,3 @@ Residual standard error: 301.4 on 21 degrees of freedom
 Multiple R-squared:  0.8376,	Adjusted R-squared:  0.8298 
 F-statistic: 108.3 on 1 and 21 DF,  p-value: 9.602e-10
 
-null device 
-          1 

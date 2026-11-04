@@ -1,9 +1,5 @@
-randomForest 4.7-1.2
-Type rfNews() to see new features/changes/bug fixes.
 Importancia por permutación (aumento del error cuadrático al desordenar):
   produccion_m3      421973
   mes_num            161378
-null device 
-          1 
 
 Gráfico guardado en: lecciones/12_explicabilidad/salidas/dependencia_parcial.png 
